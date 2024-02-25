@@ -8,7 +8,7 @@ async function init() {
 
     const res = await fetch("https://words.dev-apis.com/word-of-the-day");
     const {word}= await res.json();
-    setLoading(true);
+    setLoading(true); 
 
     function addLetter(letter) {
         if (currentGuess.length < ANSWER_LENGTH) {
