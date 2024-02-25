@@ -1,0 +1,104 @@
+header {
+    text-align: center;
+    border-bottom: 5px solid black;
+}
+
+body {
+    font-family: cursive;
+}
+
+.play-ground {  
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 315px;
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    column-gap: 3%;
+    row-gap: 4%;
+}
+
+.animate {
+    animation: color-changer 1s linear infinite;
+}
+@keyframes color-changer {
+    0% {
+        color: 	Red;
+    }
+    10% {
+        color: 	orange;
+    }
+    30% {
+        color: 	yellow;
+    }
+    50% {
+        color: 	green;
+    }
+    70% {
+        color: 	blue;
+    }
+    80% {
+        color: indigo;
+    }
+    100% {
+        color: violet;
+    }
+}
+
+.letter {
+    box-sizing: border-box;
+    height: 50px;
+    width: 55px;
+    padding: 0px 10px;
+    font-size: 30px;
+    font-weight: 1000;    
+    border: 4px solid  rgb(183, 183, 183);
+}
+
+.yellow {
+    background-color: goldenrod;
+    color: white;
+}
+
+.green {
+    background-color: darkgreen;
+    color: white;
+}
+
+.gray {
+    background-color: gray;
+    color: white;
+}
+
+.flash {
+    animation: flash-animation .8s linear;
+}
+
+@keyframes flash-animation {
+    from {
+        border-color: red;
+    }
+
+    to {
+        border-color: rgb(183, 183, 183);
+    }
+}
+
+.spinny {
+    height: fit-content;
+    width: fit-content;
+    margin-top: 10px;
+    font-size: 40px;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
