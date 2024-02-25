@@ -72,11 +72,9 @@ async function init() {
         } else {
             for (let i = 0; i < ANSWER_LENGTH; i++) {
                 letters[row * ANSWER_LENGTH + i].classList.remove('flash');
-                console.log(row * ANSWER_LENGTH + i);
                 setTimeout(()=>{
-                    console.log("Timeout : ", row * ANSWER_LENGTH + i);
                     letters[row * ANSWER_LENGTH + i].classList.add('flash');
-                }, 1);
+                }, 10);
             }
         }
 
