@@ -98,7 +98,7 @@ async function init() {
 async function isValid(word) {
     setLoading(false);
     flag = true;
-    const validate_res = await fetch("https://words.dev-apis.com/validate-word", {
+    const validate_res = await fetch("https://words.dev-apis.com/validate-word?random=1", {
         method: "POST",
         body: JSON.stringify({
             "word": word
