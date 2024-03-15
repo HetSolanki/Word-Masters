@@ -6,7 +6,7 @@ async function init() {
     let currentGuess = '';
     let row = 0;
 
-    const res = await fetch("https://words.dev-apis.com/word-of-the-day");
+    const res = await fetch("https://words.dev-apis.com/word-of-the-day?random=1");
     const {word}= await res.json();
     setLoading(true); 
 
